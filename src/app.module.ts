@@ -15,6 +15,7 @@ import { UserModule } from './user/user.module';
       password: process.env.DB_PASSWORD,
       port: Number(process.env.DB_PORT),
       username: process.env.DB_USERNAME,
+      entities: [__dirname + '/**/*.entity{.ts,.js}'],
     }),
     UserModule,
   ],
