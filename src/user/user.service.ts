@@ -22,8 +22,8 @@ export class UserService {
     return user;
   }
 
-  findAll() {
-    return `This action returns all user`;
+  async findAll(): Promise<User[]> {
+    return this.users;
   }
 
   findOne(id: number) {
